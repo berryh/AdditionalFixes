@@ -124,11 +124,18 @@ dependencies {
 	annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
 	implementation fg.deobf('curse.maven:ftb-ultimine-386134:3993576')
-	implementation fg.deobf('curse.maven:ae2-223794:4068003')
+	implementation fg.deobf('curse.maven:ae2-223794:4008959')
+	implementation fg.deobf('curse.maven:deep-resonance-233398:4008047')
 
 	runtimeOnly fg.deobf('curse.maven:ftb-library-404465:4060220')
 	runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.1.255")
 	runtimeOnly fg.deobf("curse.maven:architectury-419699:4040966")
+	runtimeOnly fg.deobf("curse.maven:rftools-base-326041:3970754")
+	runtimeOnly fg.deobf("curse.maven:mcjty-lib-233105:3994822")
+
+	runtimeOnly fg.deobf("curse.maven:mekanism-268560:3875976")
+	runtimeOnly fg.deobf("curse.maven:mekanism-generators-268566:3875978")
+	runtimeOnly fg.deobf("curse.maven:mekanism-tools-268567:3875979")
 }
 
 jar {

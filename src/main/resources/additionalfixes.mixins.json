@@ -5,7 +5,7 @@
 	"refmap": "additionalfixes.refmap.json",
 	"mixins": [
 		"AFMixinAE2StorageBus",
-		"AFMixinAE2TerminalSort",
+		"AFMixinDRClientBreakEvent",
 		"AFMixinFTBUltimineReach"
 	],
 	"client": [
