@@ -1,0 +1,12 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+license = "MIT License"
+issueTrackerURL = "https://github.com/berryh/AdditionalFixes/issues"
+[[mods]]
+modId = "additionalfixes"
+version = "${file.jarVersion}"
+displayName = "Additional Fixes"
+authors = "Berryh"
+description = '''
+Simple mod that includes a collection of fixes, for use with Enigmatica 8.
+'''

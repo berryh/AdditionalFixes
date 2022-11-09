@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "net.berryh.additionalfixes.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"refmap": "additionalfixes.refmap.json",
+	"mixins": [
+		"AFMixinAE2StorageBus",
+		"AFMixinAE2TerminalSort",
+		"AFMixinFTBUltimineReach"
+	],
+	"client": [
+	],
+	"minVersion": "0.8"
+}
