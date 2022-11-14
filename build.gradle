@@ -42,6 +42,9 @@ minecraft {
 					source sourceSets.main
 				}
 			}
+
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 		}
 
 		server {
@@ -56,6 +59,9 @@ minecraft {
 					source sourceSets.main
 				}
 			}
+
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 		}
 
 		gameTestServer {
@@ -119,9 +125,12 @@ repositories {
 }
 
 dependencies {
-	minecraft 'net.minecraftforge:forge:1.18.2-40.1.60'
+	minecraft 'net.minecraftforge:forge:1.18.2-40.1.80'
 
 	annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+	runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
+	compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api")
 
 	implementation fg.deobf('curse.maven:ftb-ultimine-386134:3993576')
 	implementation fg.deobf('curse.maven:ae2-223794:4008959')
