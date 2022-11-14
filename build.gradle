@@ -19,7 +19,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '0.0.2'
+version = '0.0.3'
 group = 'net.berryh'
 archivesBaseName = 'AdditionalFixes'
 
